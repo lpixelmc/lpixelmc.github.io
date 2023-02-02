@@ -86,7 +86,7 @@ h3{
 
 #cover{
     animation: fadeIn 2s;
-    height: 100%;
+    height: 76vh;
     text-align: center;
     padding-top: 27vh;
     background-image: url("https://cdn.discordapp.com/attachments/1020450091192041482/1070474806769758238/bg4.png");
