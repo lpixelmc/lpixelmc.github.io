@@ -1,19 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
 body {
-    background-color: #000000;
-    color: #FFFFFF;
-    font-family: "Proxima Nova 2", sans-serif;
-    font-size: 12px;
     margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
 h1 {
     font-size: 150px;
     font-weight: 5;
     z-index: 1;
+    animation: purpleBlink 5s;
+    animation-iteration-count: infinite;
 }
 img {
     width: 25%;
@@ -21,8 +17,8 @@ img {
 }
 
 #cover {
+    animation: fadeIn 2s;
     text-align: center;
-    font-family: "Proxima Nova 2", sans-serif;
     background-image: url("https://cdn.discordapp.com/attachments/1067966820096684032/1070542770193846292/city-1024x576.png");
     height: 100%;
     background-repeat: no-repeat;
@@ -30,4 +26,80 @@ img {
     text-align: center;
     padding-top: 27vh;
     font-weight: 5;
+}
+
+html {
+    background-color: black;
+    color: white;
+    font-family: "Proxima Nova", sans-serif;
+}
+
+@keyframes purpleBlink{
+    0%{
+        color: rgb(224, 122, 255);
+        text-shadow: 0 0 5rem rgba(224, 122, 255, 0.9);
+    }
+    50%{
+        color: rgb(197, 7, 255);
+        text-shadow: 0 0 5rem rgba(197, 7, 255, 1);
+    }
+    100%{
+        color: rgb(224, 122, 255);
+        text-shadow: 0 0 5rem rgba(224, 122, 255, 0.9);
+    }
+}
+
+
+@keyframes divider{
+    0%{
+        width: 0;
+        margin-left: 50vw;
+        background-color: white;
+    }
+    100%{
+        width: 20vw;
+        margin-left: 40vw;
+        background-color: rgb(163, 232, 255);
+    }
+}
+
+.divider{
+    animation: divider 3s;
+    margin-left:40vw;
+    width: 20vw;
+    height: 5px;
+    background-color: rgb(163, 232, 255);
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: 1;
+    animation: orangeBlink 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes orangeBlink{
+    0%{
+        color: rgb(255, 223, 206);
+        text-shadow: 0 0 5rem rgba(255, 223, 206, 0.9);
+    }
+    50%{
+        color: rgb(219, 161, 0);
+        text-shadow: 0 0 5rem rgba(219, 161, 0, 0, 1);
+    }
+    100%{
+        color: rgb(255, 223, 206);
+        text-shadow: 0 0 5rem rgba(255, 223, 206, 0.9);
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
