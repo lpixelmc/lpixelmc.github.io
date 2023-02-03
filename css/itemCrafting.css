@@ -11,6 +11,7 @@ h1 {
     animation: purpleBlink 5s;
     animation-iteration-count: infinite;
 }
+
 img {
     width: 25%;
     height: 25%;
@@ -19,7 +20,6 @@ img {
 #cover {
     animation: fadeIn 2s;
     text-align: center;
-    background-image: url("https://cdn.discordapp.com/attachments/1067966820096684032/1070542770193846292/city-1024x576.png");
     height: 100%;
     background-repeat: no-repeat;
     background-blend-mode: normal;
@@ -102,4 +102,9 @@ h3 {
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+img{
+    height: 15vh;
+    width: 15vw;
 }
