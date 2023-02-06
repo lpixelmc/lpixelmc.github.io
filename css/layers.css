@@ -66,6 +66,7 @@
 #layers{
     margin-top: -5vh;
 }
+
 .layer{
     float: top;
     display: block;
@@ -86,6 +87,7 @@
     float: right;
     font-size: 100px;
     margin-right: 5vw;
+    margin-top: 40vh;
     animation: purpleBlink 3s;
     animation-iteration-count: infinite;
 }
@@ -132,4 +134,9 @@
     width: 40vw;
     margin-left: 5vw;
     margin-top: 12vh;
+}
+
+#image2text{
+    animation: orangeBlink 3s;
+    animation-iteration-count: infinite;
 }
