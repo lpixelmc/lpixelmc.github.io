@@ -80,6 +80,7 @@ h3{
     animation-iteration-count: infinite;
     font-size: 50px;
     font-weight: 1;
+    text-align: center;
 }
 
 .divider{
@@ -92,10 +93,26 @@ h3{
 
 #cover{
     animation: fadeIn 2s;
-    height: 76vh;
+    height: 100vh;
     text-align: center;
-    padding-top: 27vh;
+    padding-top: 20vh;
     background-image: url("https://cdn.discordapp.com/attachments/1020450091192041482/1070474806769758238/bg4.png");
     background-blend-mode: normal;
+    transition: 1s;
+}
+.subtext {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+}
+.layer {
+    background-color: blanchedalmond;
+}
+#content {
+    height: 150%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(180, 34, 34, 0.5);
     transition: 1s;
 }
