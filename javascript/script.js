@@ -1,5 +1,9 @@
 var cover = document.getElementById("cover");
 var coverIndex = 0;
+
+window.addEventListener('load', function(){
+    document.querySelector('html').style.visibility = "visible";
+},1);
 setInterval(function(){
     if(coverIndex === 0){
         coverIndex++;

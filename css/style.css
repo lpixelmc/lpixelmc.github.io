@@ -59,10 +59,12 @@
         text-shadow: 0 0 5rem rgba(255, 223, 206, 0.9);
     }
 }
+
 html{
     background-color: black;
     color: white;
     font-family: "Minecraft", sans-serif;
+    visibility: hidden;
 }
 
 body{
@@ -89,13 +91,26 @@ h3{
     height: 5px;
     background-color: rgb(163, 232, 255);
 }
-
 #cover{
+    transition: 0.5s;
+    background-image: url("https://cdn.discordapp.com/attachments/1020450091192041482/1070474806769758238/bg4.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    object-fit: cover;
+
+}
+#cover-inner{
     animation: fadeIn 2s;
     height: 76vh;
     text-align: center;
     padding-top: 27vh;
-    background-image: url("https://cdn.discordapp.com/attachments/1020450091192041482/1070474806769758238/bg4.png");
+    
     background-blend-mode: normal;
     transition: 1s;
+}
+
+#footer{
+    height: 25vh;
+    background-color: rgb(32, 32, 32);
+    margin-top: -8vh;
 }
