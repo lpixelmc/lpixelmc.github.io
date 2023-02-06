@@ -9,11 +9,76 @@
     }
 }
 
+@keyframes purpleBlink{
+    0%{
+        color: rgb(224, 122, 255);
+        text-shadow: 0 0 5rem rgba(224, 122, 255, 0.9);
+    }
+    50%{
+        color: rgb(197, 7, 255);
+        text-shadow: 0 0 5rem rgba(197, 7, 255, 1);
+    }
+    100%{
+        color: rgb(224, 122, 255);
+        text-shadow: 0 0 5rem rgba(224, 122, 255, 0.9);
+    }
+}
+
+@keyframes orangeBlink{
+    0%{
+        color: rgb(255, 223, 206);
+        text-shadow: 0 0 5rem rgba(255, 223, 206, 0.9);
+    }
+    50%{
+        color: rgb(219, 161, 0);
+        text-shadow: 0 0 5rem rgba(219, 161, 0, 0, 1);
+    }
+    100%{
+        color: rgb(255, 223, 206);
+        text-shadow: 0 0 5rem rgba(255, 223, 206, 0.9);
+    }
+}
+
+@keyframes purpleBorderBlink{
+    0%{
+        border: 1rem solid rgb(224, 122, 255);
+    }
+    50%{
+        border: 1rem solid rgb(197, 7, 255);
+    }
+    100%{
+        border: 1rem solid rgb(224, 122, 255);
+    }
+}
+
+@keyframes orangeBorderBlink{
+    0%{
+        border: 1rem solid rgb(255, 223, 206);
+    }
+    50%{
+        border: 1rem solid rgb(219, 161, 0);
+    }
+    100%{
+        border: 1rem solid rgb(255, 223, 206);
+    }
+}
+
+#layers{
+    margin-top: -5vh;
+}
 .layer{
     float: top;
     display: block;
-    height: 50vh;
+    height: 65vh;
     background-color: rgb(61, 61, 61);
+    animation: fadeIn 3s;
+}
+
+.layeralt{
+    float: top;
+    display: block;
+    height: 65vh;
+    background-color: rgb(41, 41, 41);
     animation: fadeIn 3s;
 }
 
@@ -21,4 +86,50 @@
     float: right;
     font-size: 100px;
     margin-right: 5vw;
+    animation: purpleBlink 3s;
+    animation-iteration-count: infinite;
+}
+
+.layeralt h1{
+    float: left;
+    font-size: 100px;
+    margin-left: 5vw;
+    animation: orangeBlink 3s;
+    animation-iteration-count: infinite;
+}
+
+.layer img{
+    margin-top: 10vh;
+    float: left;
+    width: 40vw;
+    margin-left: 5vw;
+    animation: orangeBorderBlink 3s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+}
+
+.layeralt img{
+    margin-top: 10vh;
+    float: right;
+    width: 40vw;
+    margin-right: 5vw;
+    animation: purpleBorderBlink 3s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+}
+
+.layer-text-container{
+    text-align: center;
+    float: right;
+    width: 40vw;
+    margin-right: 5vw;
+    margin-top: 12vh;
+}
+
+.layeralt-text-container{
+    text-align: center;
+    float: left;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: 12vh;
 }
