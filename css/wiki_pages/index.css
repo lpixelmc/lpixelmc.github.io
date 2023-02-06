@@ -11,6 +11,25 @@ head {
 
 body {
     margin: 0;
+    overflow-x: hidden;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@keyframes fadeOutPart {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  
 }
 
 .nav {
@@ -19,6 +38,59 @@ body {
     overflow: hi;
 }
 
+
+.introContainer {
+  width: 100%;
+  border: 1px solid blue;
+  height: 25vh;
+}
+
+
+.introImage {
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+    float: left;
+    text-align: center;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+}
+
+
+.introImage:hover {
+    opacity: 0.5;
+}
+
+.featuredArticles {
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid green;
+    float: right;
+    text-align: center;
+    color: white;
+
+}
+
+.introText {
+    color: white;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    height: 100%;
+
+    
+}
 
 
 
@@ -41,6 +113,7 @@ body {
     position: relative;
     display: inline-block;
   }
+  
   
   .dropdown-content {
     display: none;

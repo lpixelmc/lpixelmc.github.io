@@ -1,47 +1,85 @@
+@font-face {
+  font-family: Minecraft;
+  src: url('../fonts/minecraft.eot?#iefix"'),
+    url('../fonts/minecraft.woff') format('woff'),
+    url('../fonts/minecraft.ttf') format('truetype');
+}
 
-#searchbar{
-    margin-left: 15%;
-    padding:15px;
-    border-radius: 10px;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  background-image: url("https://cdn.discordapp.com/attachments/1067966820096684032/1071995988555862086/imageedit_1_9607034345.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  opacity: 2;
+  height: 100vh;
+}
 
-
-
-  /* When the input field gets focus,
-       change its width to 100% */
-       input[type=text] {
-        width: 200px;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
-        background-color: white;
-        background-image: url('searchicon.png');
-        background-position: 10px 10px; 
-        background-repeat: no-repeat;
-        padding: 12px 20px 12px 40px;
-        -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
-      }
-      
-      input[type=text]:focus {
-        width: 75%;
-      }
- #list{
-   font-size:  1.5em;
-   margin-left: 90px;
-  }
-
-.pages{   
-    margin-left: 10px;
-    list-style: none;
-    padding: 0;
-    width: 200px;
-    border: 1px solid #333333;
-    border-radius: 5px;
-    background-color: #212121;
-    
+#searchbar {
+  margin-left: 0;
+  padding: 1.171875vw;
+  border-radius: 5px;
+}
 
 
+input[type=text] {
+  width: 165px;
+  box-sizing: border-box;
+  border: 0.15625vw solid #ccc;
+  border-radius: 0.3125vw;
+  font-size: 1.25vw;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 1.663893510815308vh 0.78125vw;
+  background-repeat: no-repeat;
+  padding: 1.9966722129783694vh 3.327787021630616vh 0.9375vw 3.125vw;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  font-family: "Minecraft", sans-serif;
+  text-align: center;
+}
 
- } 
+input[type=text]:focus {
+  width: 50%;
+}
+
+#list {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 15.625vw;
+  height: 75px;
+  border: 0.16638935108153077vh solid #292929;
+  border-radius: 0.831946755407654vh;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Minecraft";
+  margin: 10px 0;
+}
+
+.pages:hover {
+  background-color: #292929;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Minecraft";
+}
+
+.searchText {
+  font-family: "Minecraft";
+  font-size: 2vw;
+  color: #fff;
+  text-align: center;
+}
